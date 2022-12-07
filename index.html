@@ -602,7 +602,9 @@
         <div class="swiper swiper-no-swiping">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="./img/webp/nightView.webp">
+                    <img src="./img/webp/inkArt.webp" class="light-view">
+                    <img src="./img/webp/nightView.webp" class="night-view">
+                   
                     <div class="dragBar">
                         <p>◀ | ▶</p>
                     </div>
@@ -759,22 +761,34 @@
             $(".dragBar").mousedown((e)=>{
                 let parentWidth = $(".ninth-page .swiper-slide").width();
                 let ratio;
+                let dragWidth = $(".dragBar").width()/2
+                let ratio2;
                 e.stopPropagation;
                 document.onmousemove= (j)=>{
                     j.stopPropagation;
-                    console.log(j.offsetX,j.clientX-(window.innerWidth-parentWidth))
+                 
                   let mouseX = j.clientX-(window.innerWidth-parentWidth);
-                    if(mouseX <=0 || mouseX >=parentWidth*0.98){
+                    
+                  ratio = mouseX / parentWidth*100;
+                  ratio2 = mouseX / parentWidth*100 + (dragWidth/parentWidth*100);
+                 
+                    console.log(ratio,ratio2)
+                    if(mouseX <=-dragWidth){
+                        $(".ninth-page .swiper-slide .night-view").css("clip-path",`polygon(0 0 , 0% 0  ,0% 100% ,0 100%, 0 0)`)
+                        return
+                    }else if(mouseX >=parentWidth*0.98){
+                        $(".ninth-page .swiper-slide .night-view").css("clip-path",`polygon(0 0 , 100% 0  ,100% 100% ,0 100%, 0 0)`)
                         return
                     }
-                  let mouseY = j.pageY
-                $(".dragBar").css("left",`${mouseX}px`)
-               
-                    
+                    window.requestAnimationFrame(()=>{
+                        $(".dragBar").css("left",`${ratio}%`)
+                $(".ninth-page .swiper-slide .night-view").css("clip-path",`polygon(0 0 , ${ratio2}% 0  ,${ratio2}% 100% ,0 100%, 0 0)`)
+                    }); 
+            
+                  
                 }
                document.onmouseup=(e)=>{
-                e.stopPropagation;
-                    console.log(1)
+                    e.stopPropagation; 
                     document.onmousemove = null
                 }
             })

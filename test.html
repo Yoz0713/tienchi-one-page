@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天麒宏竹</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500&family=Noto+Serif+TC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.css">
+
+    <link rel="stylesheet" href="./style/all.min.css">
+</head>
+<body>
+   
+    <section class="ninth-page">
+        <div class="paraBox">
+            <div class="box">
+                <img src="./img/SVG/fitwelsolo.svg">
+                <p>以人為本<br>
+                    美國fitwel定調<br></p>
+            </div>
+            <div class="box">
+                <h2>從預想到實現</h2>
+                <img src="./img/SVG/goldLogo.svg">
+            </div>
+            <p>被環境疼愛的地段無法複製<br>
+                建築是城市美學的印記<br>
+                也是健康製造容器<br>
+                種植養生 儲存健康<br>
+                健康與幸福<br>
+                連本帶利傳承世代</p>
+        </div>
+        <div class="swiper swiper-no-swiping">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/webp/nightView.webp">
+                    <div class="dragBar">
+                        <p>◀ | ▶</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="navBox">
+            <div class="prev">
+                <span>></span>
+                <p>PREV</p>
+            </div>
+            <div class="next">
+                <p>NEXT</p>
+                <span>></span>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+ 
+
+    <script>
+        window.onload = function(){
+          
+            $(".dragBar").mousedown((e)=>{
+                let parentWidth = $(".ninth-page .swiper-slide").width();
+                let ratio;
+                let dragWidth = $(".dragBar").width()/2
+    
+                e.stopPropagation;
+                document.onmousemove= (j)=>{
+                    j.stopPropagation;
+                 
+                  let mouseX = j.clientX-(window.innerWidth-parentWidth);
+                    
+                  ratio = mouseX / parentWidth*100;
+                  ratio2 = mouseX / parentWidth*100 + (dragWidth/parentWidth*100);
+                 
+                    console.log(ratio,ratio2)
+                    if(mouseX <=0){
+                        $(".ninth-page .swiper-slide img").css("clip-path",`polygon(0 0 , 0% 0  ,0% 100% ,0 100%, 0 0)`)
+                        return
+                    }else if(mouseX >=parentWidth*0.98){
+                        $(".ninth-page .swiper-slide img").css("clip-path",`polygon(0 0 , 100% 0  ,100% 100% ,0 100%, 0 0)`)
+                        return
+                    }
+                    window.requestAnimationFrame(()=>{
+                        $(".dragBar").css("left",`${ratio}%`)
+                $(".ninth-page .swiper-slide img").css("clip-path",`polygon(0 0 , ${ratio}% 0  ,${ratio}% 100% ,0 100%, 0 0)`)
+                    }); 
+            
+                  
+                }
+               document.onmouseup=(e)=>{
+                    e.stopPropagation; 
+                    document.onmousemove = null
+                }
+            })
+            
+            //---------animation
+
+        }
+    </script>
+</body>
+</html>

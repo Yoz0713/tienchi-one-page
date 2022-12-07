@@ -476,6 +476,7 @@ section {
   color: rgb(85, 84, 84);
   text-align: end;
   font-weight: 600;
+  white-space: nowrap;
 }
 .sixth-page .paraBox span {
   font-family: "Manrope", sans-serif;
@@ -1345,6 +1346,8 @@ section {
 .ninth-page .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1353,6 +1356,15 @@ section {
       user-select: none; /* standard syntax */
   -webkit-user-select: none; /* for Chrome、Safari */
   -moz-user-select: none; /* for Mozilla、Firefox */
+  z-index: 2;
+}
+.ninth-page .swiper .swiper-wrapper .swiper-slide .light-view {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 .ninth-page .swiper .swiper-wrapper .swiper-slide .dragBar {
   display: flex;
