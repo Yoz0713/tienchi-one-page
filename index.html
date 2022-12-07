@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500&family=Noto+Serif+TC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./style/ytb.min.css">
     <link rel="stylesheet" href="./style/all.min.css">
 </head>
@@ -18,9 +19,12 @@
         <img src="./img/webp//swiper-bg-2.webp">
         <img src="./img/webp//swiper-bg-3.webp">
     </div>
+    <div class="falling-bg">
+
+    </div>
     <section class="first-page">
         <div class="first-page-bg">
-            <img src="./img/webp/shutterstock_700183960++.webp" alt="竹林">
+            <img src="./img/webp/shutterstock_700183960++_1.webp" alt="竹林">
             <video src="./video/glowing-bg.mp4" autoplay loop></video>
         </div>
         <div class="first-page-para">
@@ -32,6 +36,7 @@
     <section class="second-page">
         <div class="second-page-bg">
             <img src="./img/webp/second-page-bg.webp">
+            <img src="./img/SVG/flowleaf.svg">
         </div>
         <div class="second-page-para">
             <h2 >每一道光<br>
@@ -461,10 +466,8 @@
                     <div class="paraBox">
                         <p>打造最美的不是建築而已<br>
                            而是一路走來始終不變的初心~<br>
-                           家 安定的美好<br>
                             營造三十多年的底氣<br>
                             如同精釀一罈豐富韻致的老酒<br>
-                            只為知己共賞滿足人性需求<br>
                             呈現出由內而外的潤澤<br>
                             建築有溫暖的手感於焉誕生</p>
                             <div class="box">
@@ -480,14 +483,6 @@
                     </div>
                     <div class="paraBox">
                         <p>打造幸福的地標是一種使命~<br>
-                           青埔特區與國際接軌<br>
-                           當然要尋求國際標章認定<br>
-                            美國中央疫情防治中心推出fitwel平台<br>
-                            建築細部規劃需要經過層層審核<br>
-                            由美國在台協會頒發證明<br>
-                            事實上<span>46</span>戶商店與住宅建案<br>
-                            贏得美國CDC認證的規章在桃園青埔是首例<br>
-                            也塑造稀有土地的自明性<br>
                             讓居住者越住越健康 越歡喜心<br>
                             就是建築凝聚<br>
                             有溫度 靈魂 價值的生機體</p>
@@ -556,13 +551,20 @@
                                     <span>灣岸VILLA</span></p>
                                 </li>
                                 <li>
-                                    <img src="./img/webp/swiper-6-5-b1.webp">
+                                    <a href="./img/webp/swiper-6-5-b1.webp" data-fancybox data-width="1090" data-height="728">
+                                        <img src="./img/webp/swiper-6-5-b1.webp" />
+                                    </a>
+                                  
                                 </li>
                                 <li>
-                                    <img src="./img/webp/swiper-6-5-b2.webp">
+                                    <a href="./img/webp/swiper-6-5-b2.webp" data-fancybox data-width="1090" data-height="728">
+                                        <img src="./img/webp/swiper-6-5-b2.webp" />
+                                    </a>
                                 </li>
                                 <li>
-                                    <img src="./img/webp/swiper-6-5-b3.webp">
+                                    <a href="./img/webp/swiper-6-5-b3.webp" data-fancybox >
+                                        <img src="./img/webp/swiper-6-5-b3.webp" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -658,6 +660,7 @@
     <script src="./ytb.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script>
         window.onload = function(){
             jQuery(function(){
@@ -779,7 +782,7 @@
                 let ratio;
                 let dragWidth = $(".dragBar").width()/2
                 let ratio2;
-              
+               
                 document.onmousemove= (j)=>{
                     j.preventDefault()
                  
@@ -919,7 +922,43 @@
         }
         thirdPageAnimation()
 
+        function createFall(){
+        
 
+            
+            let fall = document.querySelector(".falling-bg")
+      
+            let size = [{scale:40,opacitys:4},{scale:80,opacitys:1.5},{scale:120,opacitys:0},{scale:60,opacitys:2.5}];
+            let leafClass = ['leaf','leaf2']
+            let leafs = [`url(./img/2x/leaf1.png)`,`url(./img/2x/leaf2.png)`,`url(./img/2x/leaf5.png)`]
+            let opacitys = [0.3,0.5,0.7]
+            let random = Math.random()*100+"%";
+            let random2 = Math.floor(Math.random() * size.length)
+            let leaf = document.createElement("div")
+            leaf.classList.add('leaf')
+            leaf.style.left = Math.random() * 100 + "%";
+			leaf.style.animationDuration = Math.random() * 12 + 7 + "s";
+            let size2 = size[random2].scale+"px";
+            let opacityR = opacitys[Math.floor(Math.random() * opacitys.length)];
+            leaf.style.width = size2
+            leaf.style.backgroundImage = leafs[Math.floor(Math.random() * leafs.length)]
+            leaf.style.height = size2
+            leaf.style.filter =`blur(${size[random2].opacitys}px)` ;
+            console.log(size2)
+            fall.appendChild(leaf)
+            setTimeout(()=>{
+			    leaf.remove();
+			},20000)
+        }
+      
+        setInterval(createFall ,1500);
+
+        //fancyBox
+        $('[data-fancybox]').fancybox();
+
+
+
+        //fancyBox
         }
     </script>
 </body>

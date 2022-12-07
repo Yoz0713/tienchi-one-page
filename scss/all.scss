@@ -15,6 +15,8 @@ $ch_text_xl:3.7vw;
 $ch_text_s:1.4vw;
 $gold_color:#C9A063;
 $green_color:rgb(0,78,38);
+
+
 .navBox{
     p{
         font-size: 0.9vw;
@@ -33,9 +35,46 @@ $green_color:rgb(0,78,38);
         height: auto;
     }
 }
+
+// 落葉
+.falling-bg{
+    position: fixed;
+    left: 0;
+    top: 0vh;
+    width: 100%;
+    height:100vh;
+    z-index: 0;
+   
+ 
+    pointer-events: none;
+    .leaf{
+        position: absolute;
+        top: -20vh;
+        animation-name: fall;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        background-size: 100% 100%;
+        transform-style: preserve-3d;
+    }
+    .leaf2{
+        position: absolute;
+        top: -20vh;
+        animation-name: fall;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        background-size: 100% 100%;
+        opacity: 0.7;
+    }
+}
+
+
+//落葉
+
 section{
     margin-bottom: 4vw;
+   
 }
+
 .first-page{
     width: 100%;
     height: 51vw;
@@ -50,6 +89,8 @@ section{
             height: 100%;
             object-fit: cover;
             object-position: right center;
+            position: relative;
+            z-index: 0;
         }
         video{
             position: absolute;
@@ -58,7 +99,7 @@ section{
             left: 0;
             top: 0;
             mix-blend-mode: screen;
-            opacity: 0.6;
+            opacity: 0.7;
             z-index: 10;
         }
     }
@@ -107,15 +148,32 @@ section{
     width: 100%;
     height: 51vw;
     position: relative;
+    z-index: -1;
+    overflow: hidden;
     &-bg{
         width: 100%;
         height: 100%;
         overflow: hidden;
-        img{
+   
+        & :nth-child(1){
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: left center;
+        }
+        & :nth-child(2){
+            position: absolute;
+            right: -1vw;
+            top: 1vw;
+            width: 20vw;
+            animation-name: flow;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            background-size: 100% 100%;
+            transform-origin: right top;
+            filter: blur(7px);
         }
     }
     &-para{
@@ -125,7 +183,6 @@ section{
         position: absolute;
         right:12vw;
         top: 10vw;
-  
         h2{
             font-weight: 500;
             letter-spacing: 0.1em;
@@ -318,6 +375,7 @@ section{
     width: 100%;
     height: 51vw;
     position: relative;
+    
     .swiper{
         width: 100%;
         height: 100%;
@@ -792,6 +850,8 @@ section{
     align-items: center;
     width: 100%;
     height: 51vw;
+    z-index: 2;
+    position: relative;
     img{
         border-radius: 20px;
         width: 90vw;
@@ -1063,8 +1123,14 @@ section{
                             li{
                                 display: flex;
                                 align-items: flex-end;
+                                a{
+                                    outline: none;
+                                    
+                                }
                                 img{
+                                    display: block;
                                     width: 15vw;
+                                 
                                 }
                                 p{
                                     color: $ch_text_l_color;
@@ -1604,6 +1670,8 @@ section{
     justify-content: center;
     margin: 0;
     padding-top: 13vw;
+    position: relative;
+    z-index: 2;
     .content{
         display: flex;
         flex-direction: column;
@@ -1628,7 +1696,7 @@ section{
             }
         }
         &-bottom{
-            width: fit-content;
+            width: 57vw;
             height: fit-content;
             margin-top:10vw;
             img{
@@ -1639,5 +1707,52 @@ section{
                 margin-left: 1.5vw;
             }
         }
+    }
+}
+
+
+
+
+
+@keyframes fall{
+    0%{
+        transform: translate(0,0vh);
+    }
+    25%{
+        transform: translate(-20px,33vh) rotate(57deg);
+    }
+    50%{
+        transform: translate(-180px,66vh) rotate(114deg);
+    }
+    75%{
+        transform: translate(-100px,99vh) rotate(175deg);
+    }
+    100%{
+        transform: translate(-200px,130vh) rotate(230deg);
+    }
+}
+@keyframes fall2{
+    0%{
+        transform: translate(0,0vh);
+    }
+    100%{
+        transform: translate(-25vw,130vh) rotate(-140deg);
+    }
+}
+@keyframes flow{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform:rotate(5deg) ;
+    }
+    50%{
+        transform:rotate(10deg) ;
+    }
+    75%{
+        transform:rotate(5deg) ;
+    }
+    100%{
+        transform: rotate(0);
     }
 }
