@@ -1259,7 +1259,23 @@ section {
   height: 51vw;
   position: relative;
 }
-.ninth-page .paraBox {
+.ninth-page .swiper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.ninth-page .swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.ninth-page .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox {
   display: flex;
   align-items: flex-end;
   position: absolute;
@@ -1269,26 +1285,26 @@ section {
   height: -moz-fit-content;
   height: fit-content;
 }
-.ninth-page .paraBox p {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox p {
   font-size: 1.8vw;
   color: rgb(85, 84, 84);
   text-align: end;
   font-weight: 600;
 }
-.ninth-page .paraBox span {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox span {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
 }
-.ninth-page .paraBox :nth-child(1) {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox :nth-child(1) {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.ninth-page .paraBox :nth-child(1) img {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox :nth-child(1) img {
   width: 8vw;
   margin-bottom: 0.5vw;
 }
-.ninth-page .paraBox > :nth-child(3) {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox > :nth-child(3) {
   font-size: 1.4vw;
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
@@ -1296,22 +1312,22 @@ section {
   font-weight: 500;
   line-height: 1.8em;
 }
-.ninth-page .paraBox > :nth-child(2) {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox > :nth-child(2) {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: -4.8vw;
 }
-.ninth-page .paraBox > :nth-child(2) span {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox > :nth-child(2) span {
   -ms-writing-mode: lr-tb;
       writing-mode: horizontal-tb;
   margin: 0;
   line-height: 1em;
 }
-.ninth-page .paraBox > :nth-child(2) img {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox > :nth-child(2) img {
   width: 3.1vw;
 }
-.ninth-page .paraBox h2 {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox h2 {
   -ms-writing-mode: tb-lr;
       writing-mode: vertical-lr;
   color: rgb(0, 78, 38);
@@ -1319,7 +1335,7 @@ section {
   margin-bottom: 2vw;
   font-weight: 500;
 }
-.ninth-page .paraBox h2::after {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox h2::after {
   display: block;
   content: "";
   width: 10%;
@@ -1329,21 +1345,22 @@ section {
   bottom: -0.8vw;
   right: 16.1vw;
 }
-.ninth-page .swiper {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .imgBox {
+  position: relative;
   width: 47vw;
   height: 100%;
-  margin: 0;
+  overflow: hidden;
 }
-.ninth-page .swiper .swiper-wrapper {
-  width: 100%;
-  height: 100%;
+.ninth-page .swiper .swiper-wrapper .swiper-slide .imgBox span {
+  position: absolute;
+  right: 0.5vw;
+  bottom: 0.5vw;
+  font-size: 0.7vw;
+  color: #fff;
+  filter: 0 0 1px #000;
+  letter-spacing: 0.1em;
 }
-.ninth-page .swiper .swiper-wrapper .swiper-slide {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.ninth-page .swiper .swiper-wrapper .swiper-slide img {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .imgBox img {
   width: 100%;
   height: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -1358,7 +1375,7 @@ section {
   -moz-user-select: none; /* for Mozilla、Firefox */
   z-index: 2;
 }
-.ninth-page .swiper .swiper-wrapper .swiper-slide .light-view {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .imgBox .light-view {
   position: absolute;
   left: 0;
   top: 0;
@@ -1366,7 +1383,7 @@ section {
   height: 100%;
   z-index: 0;
 }
-.ninth-page .swiper .swiper-wrapper .swiper-slide .dragBar {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .imgBox .dragBar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1383,7 +1400,7 @@ section {
   filter: drop-shadow(0 0 2px #C9A063);
   cursor: pointer;
 }
-.ninth-page .swiper .swiper-wrapper .swiper-slide .dragBar p {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .imgBox .dragBar p {
   -ms-user-select: none;
       user-select: none; /* standard syntax */
   -webkit-user-select: none; /* for Chrome、Safari */
@@ -1394,7 +1411,7 @@ section {
   color: #C9A063;
   font-weight: 900;
 }
-.ninth-page .swiper .swiper-wrapper .swiper-slide .dragBar::after {
+.ninth-page .swiper .swiper-wrapper .swiper-slide .imgBox .dragBar::after {
   display: block;
   content: "";
   position: absolute;
@@ -1406,10 +1423,92 @@ section {
   height: 51vw;
   background-color: rgb(85, 84, 84);
 }
-.ninth-page .navBox {
+.ninth-page .swiper .swiper-wrapper .slide2 .paraBox {
+  display: flex;
+  align-items: flex-end;
   position: absolute;
-  left: 49.5vw;
-  bottom: 1vw;
+  bottom: 13vw;
+  left: 22vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 1vw;
+}
+.ninth-page .swiper .swiper-wrapper .slide2 .paraBox p {
+  font-size: 1.8vw;
+  color: rgb(85, 84, 84);
+  text-align: end;
+  font-weight: 600;
+}
+.ninth-page .swiper .swiper-wrapper .slide2 .paraBox span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+}
+.ninth-page .swiper .swiper-wrapper .slide2 .paraBox > :nth-child(2) {
+  display: block;
+  font-size: 1.8vw;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  text-align: end;
+  font-weight: 500;
+  line-height: 1.8em;
+  color: rgb(0, 78, 38);
+  font-weight: 700;
+  margin: 0;
+}
+.ninth-page .swiper .swiper-wrapper .slide2 .paraBox > :nth-child(2) span {
+  display: inline;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.ninth-page .swiper .swiper-wrapper .slide2 .paraBox > :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -5.8vw;
+}
+.ninth-page .swiper .swiper-wrapper .slide2 .paraBox > :nth-child(1) span {
+  -ms-writing-mode: lr-tb;
+      writing-mode: horizontal-tb;
+  margin: 0;
+  line-height: 1em;
+}
+.ninth-page .swiper .swiper-wrapper .slide2 .paraBox > :nth-child(1) img {
+  width: 3.1vw;
+}
+.ninth-page .swiper .swiper-wrapper .slide2 .paraBox h2 {
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  color: rgb(0, 78, 38);
+  font-size: 3.7vw;
+  margin-bottom: 2vw;
+  font-weight: 500;
+}
+.ninth-page .swiper .swiper-wrapper .slide2 .paraBox h2::after {
+  display: block;
+  content: "";
+  width: 28%;
+  height: 2px;
+  position: absolute;
+  background-color: #C9A063;
+  bottom: -1.2vw;
+  right: 7.4vw;
+}
+.ninth-page .swiper .swiper-wrapper .slide2 > img {
+  width: 65vw;
+}
+.ninth-page .navBox {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  left: 45vw;
+  bottom: 1.5vw;
   z-index: 10;
   color: rgb(85, 84, 84);
 }
@@ -1418,43 +1517,45 @@ section {
 }
 .ninth-page .navBox .prev {
   display: flex;
-  flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   align-items: center;
-  margin-bottom: 1vw;
+  margin-right: 1vw;
   position: relative;
   cursor: pointer;
 }
 .ninth-page .navBox .prev span {
   transition: 0.5s;
-  transform: rotate(-90deg);
+  transform: rotateY(180deg);
+  margin-right: 0.5vw;
 }
 .ninth-page .navBox .prev::after {
   display: block;
   content: "";
   position: absolute;
-  width: 50%;
-  height: 1px;
+  width: 1px;
+  height: 0.7vw;
   background-color: rgb(85, 84, 84);
-  bottom: -0.5vw;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  bottom: 0vw;
+  top: 0;
+  right: -0.5vw;
+  margin: auto 0;
 }
 .ninth-page .navBox .prev:hover span {
-  transform: rotate(-90deg) translateX(6.5px);
+  transform: rotateY(180deg) translateX(6.5px);
 }
 .ninth-page .navBox .next {
   display: flex;
-  flex-direction: column;
   align-items: center;
   cursor: pointer;
 }
 .ninth-page .navBox .next span {
-  transform: rotate(90deg);
+  margin-left: 0.5vw;
   transition: 0.5s;
 }
 .ninth-page .navBox .next:hover span {
-  transform: rotate(90deg) translateX(6.5px);
+  transform: translateX(6.5px);
 }
 
 .tenth-page {
