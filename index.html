@@ -759,13 +759,24 @@
             $(".dragBar").mousedown((e)=>{
                 let parentWidth = $(".ninth-page .swiper-slide").width();
                 let ratio;
-                $(window.document).mousemove((j)=>{
-                    ratio = e.target.offsetLeft / parentWidth*100
-                  
-                
-              
+                e.stopPropagation;
+                document.onmousemove= (j)=>{
+                    j.stopPropagation;
+                    console.log(j.offsetX,j.clientX-(window.innerWidth-parentWidth))
+                  let mouseX = j.clientX-(window.innerWidth-parentWidth);
+                    if(mouseX <=0 || mouseX >=parentWidth*0.98){
+                        return
+                    }
+                  let mouseY = j.pageY
+                $(".dragBar").css("left",`${mouseX}px`)
+               
                     
-                })
+                }
+               document.onmouseup=(e)=>{
+                e.stopPropagation;
+                    console.log(1)
+                    document.onmousemove = null
+                }
             })
             
             //---------animation
@@ -773,7 +784,7 @@
             function splitTextAnimation(wrap){
             wrap = document.querySelector(`${wrap}`);
             text = wrap.innerText
-            console.log(text)
+           
             wrap.innerHTML = null
             let str=`${text}`;
             let brExp = /\n/i;

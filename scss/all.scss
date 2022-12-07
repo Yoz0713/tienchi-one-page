@@ -54,6 +54,7 @@ section{
             top: 0;
             mix-blend-mode: screen;
             opacity: 0.6;
+            z-index: 10;
         }
     }
     &-para{
@@ -1380,6 +1381,10 @@ section{
                     height: 100%;
                     border-radius: 20px;
                     object-fit: cover;
+                    pointer-events: none;
+                    user-select:none; /* standard syntax */
+                    -webkit-user-select:none; /* for Chrome、Safari */
+                    -moz-user-select:none;/* for Mozilla、Firefox */
                 }
                 .dragBar{
                     display: flex;
@@ -1398,6 +1403,9 @@ section{
                     filter: drop-shadow(0 0 2px $gold-color);
                     cursor: pointer;
                     p{
+                        user-select:none; /* standard syntax */
+                        -webkit-user-select:none; /* for Chrome、Safari */
+                        -moz-user-select:none;/* for Mozilla、Firefox */
                         pointer-events: none;
                         white-space: nowrap;
                         font-size: 0.5vw;

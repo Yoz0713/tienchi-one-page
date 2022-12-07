@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -49,6 +50,7 @@ section {
   top: 0;
   mix-blend-mode: screen;
   opacity: 0.6;
+  z-index: 10;
 }
 .first-page-para {
   position: absolute;
@@ -1346,6 +1348,11 @@ section {
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  pointer-events: none;
+  -ms-user-select: none;
+      user-select: none; /* standard syntax */
+  -webkit-user-select: none; /* for Chrome、Safari */
+  -moz-user-select: none; /* for Mozilla、Firefox */
 }
 .ninth-page .swiper .swiper-wrapper .swiper-slide .dragBar {
   display: flex;
@@ -1365,6 +1372,10 @@ section {
   cursor: pointer;
 }
 .ninth-page .swiper .swiper-wrapper .swiper-slide .dragBar p {
+  -ms-user-select: none;
+      user-select: none; /* standard syntax */
+  -webkit-user-select: none; /* for Chrome、Safari */
+  -moz-user-select: none; /* for Mozilla、Firefox */
   pointer-events: none;
   white-space: nowrap;
   font-size: 0.5vw;
