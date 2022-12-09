@@ -1715,6 +1715,7 @@ section {
   margin-right: 3vw;
 }
 .tenth-page .content-bottom {
+  display: flex;
   width: 57vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;

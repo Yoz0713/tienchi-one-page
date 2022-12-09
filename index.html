@@ -865,7 +865,8 @@
             })
 
             //---------dragEffect
-            $(".ninth-page .swiper-slide .imgBox").mousedown((e)=>{
+            if(window.innerWidth > 1024){
+                $(".ninth-page .swiper-slide .imgBox").mousedown((e)=>{
                 let parentWidth = $(".ninth-page .swiper-slide .imgBox").width();
                 let ratio;
                 let dragWidth = $(".dragBar").width()/2
@@ -902,8 +903,8 @@
                 }
               
             })
-
-            $(".ninth-page .swiper-slide .imgBox").on("touchstart",((e)=>{
+            }else{
+                $(".ninth-page .swiper-slide .imgBox").on("touchstart",((e)=>{
                 e.preventDefault
                 let parentWidth = $(".ninth-page .swiper-slide .imgBox").width();
                 let ratio;
@@ -941,6 +942,10 @@
                 }
               
             }))
+            }
+          
+
+           
              //---------dragEffect
             //---------animation
 

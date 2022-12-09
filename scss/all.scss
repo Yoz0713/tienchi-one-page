@@ -1769,6 +1769,7 @@ section{
             }
         }
         &-bottom{
+            display: flex;
             width: 57vw;
             height: fit-content;
             margin-top:10vw;
@@ -2475,9 +2476,7 @@ section{
             font-size:$ch_text_xl;
             margin-bottom: 10vw;
      
-            span{
-              
-            }
+            
             &::after{
                 display: block;
                 content: "";
@@ -3043,9 +3042,7 @@ section{
                     bottom: 20vw;
                     h2{
                         position: relative;
-                        span{
                         
-                        }
                         &::after{
                             display: block;
                             content: "";
@@ -5134,9 +5131,7 @@ section{
                     bottom: 20vw;
                     h2{
                         position: relative;
-                        span{
-                        
-                        }
+                      
                         &::after{
                             display: block;
                             content: "";
