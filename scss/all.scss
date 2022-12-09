@@ -1385,12 +1385,7 @@ section{
                     right: -0.5vw;
                     margin:auto 0;
                 }
-                &:hover{
-                    span{
-                        
-                        transform:rotateY(180deg) translateX(6.5px);
-                    }
-                }
+              
             }
             .next{
                 display: flex;
@@ -1401,11 +1396,7 @@ section{
                     margin-left: 0.5vw;
                     transition: 0.5s;
                 }
-                &:hover{
-                    span{
-                        transform:  translateX(6.5px);
-                    }
-                }
+               
             }
         }
     }
@@ -1710,12 +1701,7 @@ section{
                 right: -0.5vw;
                 margin:auto 0;
             }
-            &:hover{
-                span{
-                    
-                    transform:rotateY(180deg) translateX(6.5px);
-                }
-            }
+         
         }
         .next{
             display: flex;
@@ -1726,11 +1712,7 @@ section{
                 margin-left: 0.5vw;
                 transition: 0.5s;
             }
-            &:hover{
-                span{
-                    transform:  translateX(6.5px);
-                }
-            }
+       
         }
     }
 }
@@ -1768,6 +1750,7 @@ section{
         }
         &-bottom{
             display: flex;
+            align-items: center;
             width: 57vw;
             height: fit-content;
             margin-top:10vw;
@@ -3436,12 +3419,7 @@ section{
                 &::after{
                     display: none !important;
                 }
-                &:hover{
-                    span{
-                        
-                        transform:none;
-                    }
-                }
+             
             }
             .next{
                 display: flex;
@@ -3464,11 +3442,7 @@ section{
                     color: #fff;
                     font-weight: 500;
                 }
-                &:hover{
-                    span{
-                        transform:  none;
-                    }
-                }
+               
             }
         }
     }
@@ -3805,12 +3779,7 @@ section{
                 right: -1.25vw;
                 margin:auto 0;
             }
-            &:hover{
-                span{
-                    
-                    transform:none;
-                }
-            }
+           
         }
         .next{
             display: flex;
@@ -3834,11 +3803,7 @@ section{
                 font-size: 3vw;
                 color: #fff;
             }
-            &:hover{
-                span{
-                    transform: none;
-                }
-            }
+           
         }
     }
 }
@@ -3921,8 +3886,9 @@ $green_color:rgb(0,78,38);
 
 
 .navBox{
+    
     p{
-        font-size: 3.2vw;
+        font-size: 4vw;
     }
 }
 span{
@@ -4439,27 +4405,27 @@ section{
                 flex-direction: row;
                 align-items: center;
                 margin-bottom:0;
-                margin-right: 2.5vw;
+                margin-right: 4vw;
                 position: relative;
                 cursor: pointer;
                 
                 span{
                     transition: 0.5s;
                     transform: rotate(180deg);
-                    margin-right: 1vw;
+                    margin-right: 2vw;
                 }
                 &::after{
                     display: block;
                     content: "";
                     position: absolute;
                     width:1px;
-                    height: 80%;
+                    height: 60%;
                     background-color: $ch_text_l_color;
                     bottom: -0.5vw;
                     top: 0;
                     bottom: 0;
                     left: auto;
-                    right: -1.25vw;
+                    right: -2vw;
                     margin:auto 0;
                 }
                 &:hover{
@@ -4477,7 +4443,7 @@ section{
                 span{
                     transform: rotate(0deg);
                     transition: 0.5s;
-                    margin-left: 1vw;
+                    margin-left: 2vw;
                 }
                 &:hover{
                     span{
@@ -4664,14 +4630,14 @@ section{
             width: fit-content;
             align-items: center;
        
-            margin-right: 2.5vw;
+            margin-right: 4vw;
             position: relative;
             cursor: pointer;
             
             span{
                 transition: 0.5s;
                 transform: rotateY(180deg);
-                margin-right: 1vw;
+                margin-right: 2vw;
             }
             &::after{
                 display: block;
@@ -4682,7 +4648,7 @@ section{
                 background-color: $ch_text_l_color;
                 bottom: 0vw;
                 top: 0;
-                right: -1.25vw;
+                right: -2vw;
                 margin:auto 0;
             }
             &:hover{
@@ -4698,7 +4664,7 @@ section{
             align-items: center;
             cursor: pointer;
             span{
-                margin-left: 1vw;
+                margin-left: 2vw;
                 transition: 0.5s;
             }
             &:hover{
@@ -5548,12 +5514,7 @@ section{
                 &::after{
                     display: none !important;
                 }
-                &:hover{
-                    span{
-                        
-                        transform:none;
-                    }
-                }
+              
             }
             .next{
                 display: flex;
@@ -5576,11 +5537,7 @@ section{
                     color: #fff;
                     font-weight: 500;
                 }
-                &:hover{
-                    span{
-                        transform:none;
-                    }
-                }
+            
             }
         }
     }
@@ -5907,12 +5864,7 @@ section{
             &::after{
                 display: none !important;
             }
-            &:hover{
-                span{
-                    
-                    transform:none;
-                }
-            }
+          
         }
         .next{
             display: flex;
@@ -5935,16 +5887,13 @@ section{
                 color: #fff;
                 font-weight: 500;
             }
-            &:hover{
-                span{
-                    transform:none;
-                }
-            }
+          
         }
     }
 }
 .tenth-page{
     display: flex;
+    align-items: center;
     width: 100%;
     height: 150vw;
     justify-content: center;

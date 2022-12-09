@@ -1345,9 +1345,6 @@ section {
   right: -0.5vw;
   margin: auto 0;
 }
-.eighth-page .swiper .navBox .prev:hover span {
-  transform: rotateY(180deg) translateX(6.5px);
-}
 .eighth-page .swiper .navBox .next {
   display: flex;
   align-items: center;
@@ -1356,9 +1353,6 @@ section {
 .eighth-page .swiper .navBox .next span {
   margin-left: 0.5vw;
   transition: 0.5s;
-}
-.eighth-page .swiper .navBox .next:hover span {
-  transform: translateX(6.5px);
 }
 
 .ninth-page {
@@ -1655,9 +1649,6 @@ section {
   right: -0.5vw;
   margin: auto 0;
 }
-.ninth-page .navBox .prev:hover span {
-  transform: rotateY(180deg) translateX(6.5px);
-}
 .ninth-page .navBox .next {
   display: flex;
   align-items: center;
@@ -1666,9 +1657,6 @@ section {
 .ninth-page .navBox .next span {
   margin-left: 0.5vw;
   transition: 0.5s;
-}
-.ninth-page .navBox .next:hover span {
-  transform: translateX(6.5px);
 }
 
 .tenth-page {
@@ -1713,6 +1701,7 @@ section {
 }
 .tenth-page .content-bottom {
   display: flex;
+  align-items: center;
   width: 57vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -3323,9 +3312,6 @@ section {
   .eighth-page .swiper .navBox .prev::after {
     display: none !important;
   }
-  .eighth-page .swiper .navBox .prev:hover span {
-    transform: none;
-  }
   .eighth-page .swiper .navBox .next {
     display: flex;
     justify-content: center;
@@ -3346,9 +3332,6 @@ section {
     font-size: 3vw;
     color: #fff;
     font-weight: 500;
-  }
-  .eighth-page .swiper .navBox .next:hover span {
-    transform: none;
   }
   .ninth-page {
     display: flex;
@@ -3683,9 +3666,6 @@ section {
     right: -1.25vw;
     margin: auto 0;
   }
-  .ninth-page .navBox .prev:hover span {
-    transform: none;
-  }
   .ninth-page .navBox .next {
     display: flex;
     justify-content: center;
@@ -3706,9 +3686,6 @@ section {
     margin-right: 0;
     font-size: 3vw;
     color: #fff;
-  }
-  .ninth-page .navBox .next:hover span {
-    transform: none;
   }
   .tenth-page {
     display: flex;
@@ -3787,7 +3764,7 @@ section {
 }
 @media screen and (max-width: 1024px) and (max-width: 500px) {
   .navBox p {
-    font-size: 3.2vw;
+    font-size: 4vw;
   }
   span {
     display: inline-block;
@@ -4293,27 +4270,27 @@ section {
     flex-direction: row;
     align-items: center;
     margin-bottom: 0;
-    margin-right: 2.5vw;
+    margin-right: 4vw;
     position: relative;
     cursor: pointer;
   }
   .fifth-page .swiper .navBox .prev span {
     transition: 0.5s;
     transform: rotate(180deg);
-    margin-right: 1vw;
+    margin-right: 2vw;
   }
   .fifth-page .swiper .navBox .prev::after {
     display: block;
     content: "";
     position: absolute;
     width: 1px;
-    height: 80%;
+    height: 60%;
     background-color: rgb(85, 84, 84);
     bottom: -0.5vw;
     top: 0;
     bottom: 0;
     left: auto;
-    right: -1.25vw;
+    right: -2vw;
     margin: auto 0;
   }
   .fifth-page .swiper .navBox .prev:hover span {
@@ -4328,7 +4305,7 @@ section {
   .fifth-page .swiper .navBox .next span {
     transform: rotate(0deg);
     transition: 0.5s;
-    margin-left: 1vw;
+    margin-left: 2vw;
   }
   .fifth-page .swiper .navBox .next:hover span {
     transform: rotate(0deg) translateX(6.5px);
@@ -4511,14 +4488,14 @@ section {
     width: -moz-fit-content;
     width: fit-content;
     align-items: center;
-    margin-right: 2.5vw;
+    margin-right: 4vw;
     position: relative;
     cursor: pointer;
   }
   .sixth-page .navBox .prev span {
     transition: 0.5s;
     transform: rotateY(180deg);
-    margin-right: 1vw;
+    margin-right: 2vw;
   }
   .sixth-page .navBox .prev::after {
     display: block;
@@ -4529,7 +4506,7 @@ section {
     background-color: rgb(85, 84, 84);
     bottom: 0vw;
     top: 0;
-    right: -1.25vw;
+    right: -2vw;
     margin: auto 0;
   }
   .sixth-page .navBox .prev:hover span {
@@ -4541,7 +4518,7 @@ section {
     cursor: pointer;
   }
   .sixth-page .navBox .next span {
-    margin-left: 1vw;
+    margin-left: 2vw;
     transition: 0.5s;
   }
   .sixth-page .navBox .next:hover span {
@@ -5367,9 +5344,6 @@ section {
   .eighth-page .swiper .navBox .prev::after {
     display: none !important;
   }
-  .eighth-page .swiper .navBox .prev:hover span {
-    transform: none;
-  }
   .eighth-page .swiper .navBox .next {
     display: flex;
     justify-content: center;
@@ -5390,9 +5364,6 @@ section {
     font-size: 5vw;
     color: #fff;
     font-weight: 500;
-  }
-  .eighth-page .swiper .navBox .next:hover span {
-    transform: none;
   }
   .ninth-page {
     display: flex;
@@ -5714,9 +5685,6 @@ section {
   .ninth-page .navBox .prev::after {
     display: none !important;
   }
-  .ninth-page .navBox .prev:hover span {
-    transform: none;
-  }
   .ninth-page .navBox .next {
     display: flex;
     justify-content: center;
@@ -5738,11 +5706,9 @@ section {
     color: #fff;
     font-weight: 500;
   }
-  .ninth-page .navBox .next:hover span {
-    transform: none;
-  }
   .tenth-page {
     display: flex;
+    align-items: center;
     width: 100%;
     height: 150vw;
     justify-content: center;
