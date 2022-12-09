@@ -904,6 +904,7 @@
             })
 
             $(".ninth-page .swiper-slide .imgBox").on("touchstart",((e)=>{
+                e.preventDefault
                 let parentWidth = $(".ninth-page .swiper-slide .imgBox").width();
                 let ratio;
                 let dragWidth = $(".dragBar").width()/2
