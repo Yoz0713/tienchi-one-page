@@ -244,9 +244,6 @@ section {
 .third-page .mb_YTPseekbar {
   background-color: #C9A063;
 }
-.third-page .buttonBar {
-  display: none;
-}
 
 .forth-page {
   width: 100%;
@@ -1974,19 +1971,6 @@ section {
   .third-page .mb_YTPseekbar {
     background-color: #C9A063;
   }
-  .third-page .buttonBar {
-    display: block;
-  }
-  .third-page .buttonBar .mb_YTPUrl {
-    display: none;
-  }
-  .third-page .buttonBar .mb_YTPTime {
-    display: none;
-  }
-  .third-page .buttonBar .mb_OnlyYT {
-    left: auto;
-    right: 2vw;
-  }
   .forth-page {
     width: 100%;
     height: 150vw;
@@ -2333,6 +2317,7 @@ section {
   }
   .sixth-page .paraBox {
     display: flex;
+    width: 100%;
     flex-direction: column;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -2382,6 +2367,7 @@ section {
     margin-bottom: -4.8vw;
     margin-left: 0.7vw;
     order: -1;
+    position: relative;
   }
   .sixth-page .paraBox .box span {
     -ms-writing-mode: lr-tb;
@@ -2411,11 +2397,13 @@ section {
     height: 2px;
     position: absolute;
     background-color: #C9A063;
-    bottom: 51vw;
-    left: 42.2vw;
+    bottom: 24vw;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
   .sixth-page .paraBox .active:after {
-    width: 8%;
+    width: 10%;
   }
   .sixth-page .swiper {
     width: 95%;
@@ -2627,11 +2615,10 @@ section {
     height: 2px;
     position: absolute;
     background-color: #C9A063;
-    bottom: 58.5vw;
-    left: 27vw;
+    bottom: 23.5vw;
   }
   .sixth-page-opposite .paraBox .active:after {
-    width: 10%;
+    width: 20%;
   }
   .sixth-page-same2 .paraBox {
     display: flex;
@@ -2712,8 +2699,7 @@ section {
     height: 2px;
     position: absolute;
     background-color: #C9A063;
-    bottom: 46.5vw;
-    left: 21.3vw;
+    bottom: 24vw;
   }
   .sixth-page-same2 .paraBox h2 :nth-child(3) {
     position: static;
@@ -4013,19 +3999,6 @@ section {
   .third-page .mb_YTPseekbar {
     background-color: #C9A063;
   }
-  .third-page .buttonBar {
-    display: block;
-  }
-  .third-page .buttonBar .mb_YTPUrl {
-    display: none;
-  }
-  .third-page .buttonBar .mb_YTPTime {
-    display: none;
-  }
-  .third-page .buttonBar .mb_OnlyYT {
-    left: auto !important;
-    right: 2vw;
-  }
   .forth-page {
     width: 100%;
     height: 200vw;
@@ -4451,11 +4424,13 @@ section {
     height: 2px;
     position: absolute;
     background-color: #C9A063;
-    bottom: 54.5vw;
-    left: 44.2vw;
+    bottom: 25vw;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
   .sixth-page .paraBox .active:after {
-    width: 8%;
+    width: 15%;
   }
   .sixth-page .swiper {
     width: 95%;
@@ -4667,11 +4642,10 @@ section {
     height: 2px;
     position: absolute;
     background-color: #C9A063;
-    bottom: 63vw;
-    left: 28.5vw;
+    bottom: 23vw;
   }
   .sixth-page-opposite .paraBox .active:after {
-    width: 10%;
+    width: 30%;
   }
   .sixth-page-same2 .paraBox {
     display: flex;
@@ -4752,8 +4726,7 @@ section {
     height: 2px;
     position: absolute;
     background-color: #C9A063;
-    bottom: 48.5vw;
-    left: 25.5vw;
+    bottom: 24.5vw;
   }
   .sixth-page-same2 .paraBox h2 :nth-child(3) {
     position: static;
@@ -4762,7 +4735,7 @@ section {
     position: static;
   }
   .sixth-page-same2 .paraBox .active:after {
-    width: 12%;
+    width: 15%;
   }
   .seventh-page {
     display: flex;
@@ -4883,11 +4856,11 @@ section {
     height: 2px;
     position: absolute;
     background-color: #C9A063;
-    bottom: 78vw;
-    left: 46.8vw;
+    bottom: 78.5vw;
+    left: 45.6vw;
   }
   .eighth-page .swiper .swiper-wrapper .slide1 .paraBox .active::after {
-    width: 6%;
+    width: 9%;
   }
   .eighth-page .swiper .swiper-wrapper .slide2 {
     position: relative;
@@ -4992,8 +4965,8 @@ section {
   .eighth-page .swiper .swiper-wrapper .slide2 .paraBox h2::before {
     display: block;
     content: "";
-    width: 25%;
-    height: 1px;
+    width: 30%;
+    height: 2px;
     position: absolute;
     background-color: #C9A063;
     bottom: 24.5vw;
@@ -5501,7 +5474,7 @@ section {
   }
   .ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox > :nth-child(2) img {
     order: -1;
-    width: 6vw;
+    width: 8vw;
     margin-bottom: 6vw;
   }
   .ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox h2 {
@@ -5520,11 +5493,11 @@ section {
     height: 2px;
     position: absolute;
     background-color: #C9A063;
-    bottom: 64.5vw;
-    left: 47vw;
+    bottom: 64vw;
+    left: 45.5vw;
   }
   .ninth-page .swiper .swiper-wrapper .swiper-slide .paraBox .active::after {
-    width: 6%;
+    width: 9%;
   }
   .ninth-page .swiper .swiper-wrapper .swiper-slide .imgBox {
     position: relative;
@@ -5669,7 +5642,7 @@ section {
   }
   .ninth-page .swiper .swiper-wrapper .slide2 .paraBox > :nth-child(1) img {
     order: -1;
-    width: 6vw;
+    width: 8vw;
     margin-bottom: 12vw;
   }
   .ninth-page .swiper .swiper-wrapper .slide2 .paraBox h2 {
@@ -5687,12 +5660,12 @@ section {
     height: 2px;
     position: absolute;
     background-color: #C9A063;
-    bottom: 20vw;
-    right: 16.8vw;
+    bottom: 20.2vw;
+    right: 16vw;
     left: auto;
   }
   .ninth-page .swiper .swiper-wrapper .slide2 .paraBox .active::after {
-    width: 17%;
+    width: 22.5%;
   }
   .ninth-page .swiper .swiper-wrapper .slide2 > img {
     order: -1;

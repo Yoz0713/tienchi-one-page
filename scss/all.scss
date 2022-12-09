@@ -252,9 +252,7 @@ section{
     .mb_YTPseekbar{
         background-color: $gold_color;
     }
-    .buttonBar{
-        display: none;
-    }
+  
 }
 .forth-page{
     width: 100%;
@@ -2046,19 +2044,7 @@ section{
     .mb_YTPseekbar{
         background-color: $gold_color;
     }
-    .buttonBar{
-        display: block;
-        .mb_YTPUrl{
-            display: none;
-        }
-        .mb_YTPTime{
-            display: none;
-        }
-        .mb_OnlyYT{
-            left: auto;
-            right: 2vw;
-        }
-    }
+    
 }
 .forth-page{
     width: 100%;
@@ -2414,6 +2400,7 @@ section{
     overflow: hidden;
     .paraBox{
         display: flex;
+        width: 100%;
         flex-direction: column;
         width: fit-content;
         align-items:center;
@@ -2458,6 +2445,7 @@ section{
             margin-bottom: -4.8vw;
             margin-left: 0.7vw;
             order: -1;
+            position: relative;
             span{
                 writing-mode: horizontal-tb;
                 margin: 0;
@@ -2476,7 +2464,7 @@ section{
             color: $green_color;
             font-size:$ch_text_xl;
             margin-bottom: 10vw;
-     
+            
             
             &::after{
                 display: block;
@@ -2486,15 +2474,17 @@ section{
                 height: 2px;
                 position: absolute;
                 background-color:$gold_color;
-                bottom: 51vw;
-                left: 42.2vw;
+                bottom: 24vw;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
               
               
             }
         }
         .active{
             &:after{
-                width: 8%;
+                width: 10%;
             }
         }
       
@@ -2712,15 +2702,15 @@ section{
                 height: 2px;
                 position: absolute;
                 background-color:$gold_color;
-                bottom: 58.5vw;
-                left: 27vw;
+                bottom: 23.5vw;
+             
               
               
             }
         }
         .active{
             &:after{
-                width: 10%;
+                width: 20%;
             }
         }
       
@@ -2801,8 +2791,7 @@ section{
                 height: 2px;
                 position: absolute;
                 background-color:$gold_color;
-                bottom: 46.5vw;
-                left: 21.3vw;
+                bottom: 24vw;
               
               
             }
@@ -4154,20 +4143,7 @@ section{
     .mb_YTPseekbar{
         background-color: $gold_color;
     }
-    .buttonBar{
-        display: block;
-        .mb_YTPUrl{
-            display: none;
-        }
-        .mb_YTPTime{
-            display: none;
-        }
-        .mb_OnlyYT{
-           
-            left: auto !important;
-            right: 2vw;
-        }
-    }
+    
 }
 .forth-page{
     width: 100%;
@@ -4594,15 +4570,17 @@ section{
                 height: 2px;
                 position: absolute;
                 background-color:$gold_color;
-                bottom: 54.5vw;
-                left: 44.2vw;
+                bottom: 25vw;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
               
               
             }
         }
         .active{
             &:after{
-                width: 8%;
+                width: 15%;
             }
         }
       
@@ -4820,15 +4798,15 @@ section{
                 height: 2px;
                 position: absolute;
                 background-color:$gold_color;
-                bottom: 63vw;
-                left: 28.5vw;
+                bottom: 23vw;
+        
               
               
             }
         }
         .active{
             &:after{
-                width: 10%;
+                width: 30%;
             }
         }
       
@@ -4909,8 +4887,8 @@ section{
                 height: 2px;
                 position: absolute;
                 background-color:$gold_color;
-                bottom: 48.5vw;
-                left: 25.5vw;
+                bottom: 24.5vw;
+           
               
               
             }
@@ -4925,7 +4903,7 @@ section{
         }
         .active{
             &:after{
-                width: 12%;
+                width: 15%;
             }
         }
       
@@ -5045,13 +5023,13 @@ section{
                             height: 2px;
                             position: absolute;
                             background-color:$gold_color;
-                            bottom: 78vw;
-                            left: 46.8vw;
+                            bottom: 78.5vw;
+                            left: 45.6vw;
                         }
                     }
                     .active{
                         &::after{
-                            width: 6%;
+                            width: 9%;
                         }
                     }
                   
@@ -5148,8 +5126,8 @@ section{
                         &::before{
                             display: block;
                             content: "";
-                            width: 25%;
-                            height: 1px;
+                            width: 30%;
+                            height: 2px;
                             position: absolute;
                             background-color:$gold_color;
                             bottom: 24.5vw;
@@ -5684,7 +5662,7 @@ section{
                         }
                         img{
                             order: -1;
-                            width: 6vw;
+                            width: 8vw;
                             margin-bottom: 6vw;
                         }
                     }
@@ -5703,15 +5681,15 @@ section{
                             height: 2px;
                             position: absolute;
                             background-color:$gold_color;
-                            bottom: 64.5vw;
-                            left: 47vw;
+                            bottom: 64vw;
+                            left: 45.5vw;
                           
                           
                         }
                     }
                     .active{
                         &::after{
-                            width: 6%;
+                            width: 9%;
                         }
                     }
                   
@@ -5852,7 +5830,7 @@ section{
                         }
                         img{
                             order: -1;
-                            width: 6vw;
+                            width: 8vw;
                             margin-bottom: 12vw;
                         }
                     }
@@ -5870,15 +5848,15 @@ section{
                             height: 2px;
                             position: absolute;
                             background-color:$gold_color;
-                            bottom:20vw;
-                            right: 16.8vw;
+                            bottom:20.2vw;
+                            right: 16vw;
                             left: auto;
                           
                         }
                     }
                     .active{
                         &::after{
-                            width: 17%;
+                            width: 22.5%;
                         }
                     }
                   
