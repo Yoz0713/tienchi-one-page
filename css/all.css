@@ -1667,7 +1667,7 @@ section {
   width: 100%;
   height: 51vw;
   justify-content: center;
-  padding-top: 13vw;
+  padding-top: 8vw;
   position: relative;
   z-index: 2;
 }
@@ -1732,6 +1732,78 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.form-page {
+  width: 100%;
+  margin-top: 5vw;
+  margin-bottom: 15vw;
+}
+.form-page-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #999999;
+}
+.form-page-title h2 {
+  font-size: 3vw;
+  font-weight: 500;
+  color: rgb(0, 78, 38);
+  margin-bottom: 1vw;
+}
+.form-page form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 5vw auto 0;
+  position: relative;
+}
+.form-page form .formBox {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 49%;
+  margin-bottom: 2vw;
+}
+.form-page form .formBox label {
+  font-size: 1vw;
+  color: #1a1a1a;
+  margin-bottom: 0.5vw;
+}
+.form-page form .formBox input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #999999;
+  font-size: 0.8vw;
+  padding: 0.5vw;
+}
+.form-page form .formBox select {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #999999;
+  padding: 0.5vw 0;
+  font-size: 0.8vw;
+}
+.form-page form > input {
+  position: absolute;
+  bottom: -8vw;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 15vw;
+  padding: 0.8vw 0;
+  border-radius: 40px;
+  background-color: rgb(0, 78, 38);
+  border: none;
+  color: #fff;
+  font-size: 1vw;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.form-page form > input:hover {
+  transform: translateY(10px);
 }
 
 .computer {
@@ -3765,6 +3837,78 @@ section {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .form-page {
+    width: 100%;
+    margin-top: 15vw;
+    margin-bottom: 25vw;
+  }
+  .form-page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 2vw;
+  }
+  .form-page-title h2 {
+    font-size: 3vw;
+    font-weight: 500;
+    color: rgb(0, 78, 38);
+    margin-bottom: 1vw;
+  }
+  .form-page form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 5vw auto 0;
+    position: relative;
+  }
+  .form-page form .formBox {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    margin-bottom: 2vw;
+  }
+  .form-page form .formBox label {
+    font-size: 2.5vw;
+    color: #1a1a1a;
+    margin-bottom: 0.5vw;
+  }
+  .form-page form .formBox input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999999;
+    font-size: 2.2vw;
+    padding: 0.5vw;
+  }
+  .form-page form .formBox select {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999999;
+    padding: 0.5vw 0;
+    font-size: 2.2vw;
+  }
+  .form-page form > input {
+    position: absolute;
+    bottom: -15vw;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 25vw;
+    padding: 1.5vw 0;
+    border-radius: 40px;
+    background-color: rgb(0, 78, 38);
+    border: none;
+    color: #fff;
+    font-size: 2.2vw;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .form-page form > input:hover {
+    transform: translateY(10px);
+  }
 }
 @media screen and (max-width: 1024px) and (max-width: 500px) {
   .navBox p {
@@ -5781,6 +5925,78 @@ section {
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .form-page {
+    width: 100%;
+    margin-top: 25vw;
+    margin-bottom: 35vw;
+  }
+  .form-page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto 10vw;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 2vw;
+  }
+  .form-page-title h2 {
+    font-size: 6vw;
+    font-weight: 500;
+    color: rgb(0, 78, 38);
+    margin-bottom: 5vw;
+  }
+  .form-page form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10vw auto 0;
+    position: relative;
+  }
+  .form-page form .formBox {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    margin-bottom: 15vw;
+  }
+  .form-page form .formBox label {
+    font-size: 4vw;
+    color: #1a1a1a;
+    margin-bottom: 1.5vw;
+  }
+  .form-page form .formBox input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999999;
+    font-size: 3.5vw;
+    padding: 1.5vw;
+  }
+  .form-page form .formBox select {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999999;
+    padding: 1.5vw 0;
+    font-size: 3.5vw;
+  }
+  .form-page form > input {
+    position: absolute;
+    bottom: -15vw;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 25vw;
+    padding: 1.5vw 0;
+    border-radius: 40px;
+    background-color: rgb(0, 78, 38);
+    border: none;
+    color: #fff;
+    font-size: 2.2vw;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .form-page form > input:hover {
+    transform: translateY(10px);
   }
 }
 @-webkit-keyframes fall {

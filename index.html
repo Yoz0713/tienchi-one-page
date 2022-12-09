@@ -18,7 +18,6 @@
         <img src="./img/webp/swiper-bg.webp">
         <img src="./img/webp//swiper-bg-2.webp" class="computer">
         <img src="./img/webp//swiper-bg-3.webp" class="computer">
-        
         <img src="./img/webp/swiper-bg.webp" class="phone">
         <img src="./img/webp/swiper-bg.webp" class="phone">
         <img src="./img/webp/swiper-bg.webp" class="phone">
@@ -37,7 +36,7 @@
             <div class="first-page-bg">
                 <img src="./img/webp/shutterstock_700183960++_1.webp" alt="竹林" class="computer">
                 <img src="./img/webp/first-page-bg-ph.webp" alt="竹林" class="phone">
-                <video src="./video/glowing-bg.mp4" autoplay loop></video>
+                <video src="./video/glowing-bg.mp4" autoplay loop muted></video>
             </div>
             <div class="first-page-para">
                 <h2 >每一縷風<br>
@@ -707,12 +706,41 @@
                 </div>
             </div>
         </section>
+      
         <section class="elenth-page">
             <img src="./img/2x/elenth-bg.png" class="computer">
             <img src="./img/2x/elenth-bg-ph.png" class="phone">
         </section>
+     
     </main>
-  
+    <section class="form-page">
+        <div class="form-page-title">
+            <h2>CONTACT</h2>
+        </div>
+        <form>
+            <div class="formBox">
+                <label for="name">姓名:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="formBox">
+                <label for="phone">電話:</label>
+                <input type="text" id="phone">
+            </div>
+            <div class="formBox">
+                <label for="time">方便聯絡時間:</label>
+                <input type="text" id="time">
+            </div>
+            <div class="formBox">
+                <label for="need">需求:</label>
+                <select id="need">
+                    <option value="dobule-room">2房</option>
+                    <option value="triple-room">3房</option>
+                    <option value="no-request">皆可</option>
+                </select>
+            </div>
+            <input type="submit" value="發送訊息">
+        </form>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./ytb.min.js"></script>
@@ -1589,11 +1617,11 @@
             let fall = document.querySelector(".falling-bg")
       
             let size = [{scale:window.innerWidth > 1024 ? 40:20,
-                opacitys:4,
+                opacitys:6,
                 bright:0.6,
                 index:1},
             {scale:window.innerWidth > 1024 ? 80:40,
-                opacitys:1.5,
+                opacitys:2.5,
                 bright:0.8,
                 index:3},
             {scale:window.innerWidth > 1024 ? 120:60,
@@ -1601,7 +1629,7 @@
                 bright:1,
                 index:5},
             {scale:window.innerWidth > 1024 ? 60:30,
-                opacitys:2.5,
+                opacitys:4.5,
                 bright:0.7,
                 index:2}
         ];
