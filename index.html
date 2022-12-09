@@ -905,7 +905,7 @@
             })
             }else{
                 $(".ninth-page .swiper-slide .imgBox").on("touchstart",((e)=>{
-                e.preventDefault
+                e.preventDefault()
                 let parentWidth = $(".ninth-page .swiper-slide .imgBox").width();
                 let ratio;
                 let dragWidth = $(".dragBar").width()/2
@@ -1018,7 +1018,7 @@
         function secondPageAnimation(){
             let gg = gsap.timeline({
                 scrollTrigger:{
-                    trigger:".second-page",
+                    trigger:".second-page h2",
                     start:"top 80%"
                 }
             })
