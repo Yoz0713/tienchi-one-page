@@ -18,6 +18,7 @@
         <img src="./img/webp/swiper-bg.webp">
         <img src="./img/webp//swiper-bg-2.webp" class="computer">
         <img src="./img/webp//swiper-bg-3.webp" class="computer">
+     
         <img src="./img/webp/swiper-bg.webp" class="phone">
         <img src="./img/webp/swiper-bg.webp" class="phone">
         <img src="./img/webp/swiper-bg.webp" class="phone">
@@ -1299,7 +1300,7 @@
             },{
               
                 opacity:1,
-                duration:0.5,
+                duration:0.6,
                 stagger:0.06
                
             }).fromTo(".sixth-page-same2 .paraBox .box img",{
@@ -1587,18 +1588,22 @@
             
             let fall = document.querySelector(".falling-bg")
       
-            let size = [{scale:window.innerWidth > 1024 ? 40:10,
+            let size = [{scale:window.innerWidth > 1024 ? 40:20,
                 opacitys:4,
-                bright:0.6},
-            {scale:window.innerWidth > 1024 ? 80:30,
+                bright:0.6,
+                index:1},
+            {scale:window.innerWidth > 1024 ? 80:40,
                 opacitys:1.5,
-                bright:0.8},
-            {scale:window.innerWidth > 1024 ? 120:50,
+                bright:0.8,
+                index:3},
+            {scale:window.innerWidth > 1024 ? 120:60,
                 opacitys:0,
-                bright:1},
-            {scale:window.innerWidth > 1024 ? 60:20,
+                bright:1,
+                index:5},
+            {scale:window.innerWidth > 1024 ? 60:30,
                 opacitys:2.5,
-                bright:0.7}
+                bright:0.7,
+                index:2}
         ];
             let leafClass = ['leaf','leaf2']
             let leafs = [`url(./img/2x/leaf1.png)`,`url(./img/2x/leaf2.png)`,`url(./img/2x/leaf5.png)`]
@@ -1608,7 +1613,7 @@
             let leaf = document.createElement("div")
             leaf.classList.add('leaf')
             leaf.style.left = Math.random() * 100 + "%";
-			leaf.style.animationDuration = Math.random() * 25 + 11 + "s";
+			leaf.style.animationDuration = Math.random() * 15 + 11 + "s";
             let size2 = size[random2].scale+"px";
             let opacityR = opacitys[Math.floor(Math.random() * opacitys.length)];
             leaf.style.width = size2
@@ -1616,6 +1621,7 @@
             leaf.style.height = size2
             leaf.style.filter =`blur(${size[random2].opacitys}px)` ;
             leaf.style.filter =`brightness(${size[random2].bright})` ;
+            leaf.style.zIndex =`${size[random2].index}` ;
             fall.appendChild(leaf)
             setTimeout(()=>{
 			    leaf.remove();

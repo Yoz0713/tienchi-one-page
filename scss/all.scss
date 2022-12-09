@@ -41,7 +41,7 @@ span{
 
     position: absolute;
     z-index: -1;
-    top: 140vw;
+    top: 151vw;
   
     img{
         width: 100%;
@@ -1789,6 +1789,7 @@ section{
     margin: 0;
     position: relative;
     z-index: 10;
+    background-color: rgb(217,208,186);
     img{
         width: 100%;
         height: 100%;
@@ -3419,32 +3420,32 @@ section{
             margin:auto;
             z-index: 10;
             color: $ch_text_l_color;
-           
+            padding: 0 1.5vw;
             .prev{
                 display: flex;
-                width: fit-content;
+                justify-content: center;
                 align-items: center;
-           
-                margin-right: 2.5vw;
+                width: 6vw;
+                height: 6vw;
+                background-color: $gold_color;
+                margin-right:0;
+                border-radius: 50%;
                 position: relative;
                 cursor: pointer;
-                
+                p{
+                    display: none;
+                }
                 span{
                     transition: 0.5s;
                     transform: rotateY(180deg);
-                    margin-right: 1vw;
+                    margin-right: 0;
+                    font-size: 3vw;
+               
+                    color: #fff;
+                    font-weight: 500;
                 }
                 &::after{
-                    display: block;
-                    content: "";
-                    position: absolute;
-                    width: 1px;
-                    height: 2vw;
-                    background-color: $ch_text_l_color;
-                    bottom: 0vw;
-                    top: 0;
-                    right: -1.25vw;
-                    margin:auto 0;
+                    display: none !important;
                 }
                 &:hover{
                     span{
@@ -3455,12 +3456,24 @@ section{
             }
             .next{
                 display: flex;
-      
+                justify-content: center;
                 align-items: center;
+                width: 6vw;
+                height: 6vw;
+                background-color: $gold_color;
+                margin-right:0;
+                border-radius: 50%;
                 cursor: pointer;
+                p{
+                    display: none;
+                }
                 span{
-                    margin-left: 1vw;
+                    margin-left:0;
                     transition: 0.5s;
+                    font-size: 3vw;
+               
+                    color: #fff;
+                    font-weight: 500;
                 }
                 &:hover{
                     span{
@@ -3768,23 +3781,31 @@ section{
         margin:auto;
         z-index: 10;
         color: $ch_text_l_color;
-       
+        padding: 1.5vw;
         .prev{
             display: flex;
             width: fit-content;
+            justify-content: center;
             align-items: center;
-       
-            margin-right: 2.5vw;
+            width: 6vw;
+            height: 6vw;
+            border-radius: 50%;
+            background-color: $gold_color;
+            margin-right: 0;
             position: relative;
             cursor: pointer;
-            
+            p{
+                display: none;
+            }
             span{
                 transition: 0.5s;
                 transform: rotateY(180deg);
-                margin-right: 1vw;
+                margin-right:0;
+                font-size: 3vw;
+                color: #fff;
             }
             &::after{
-                display: block;
+                display: none !important;
                 content: "";
                 position: absolute;
                 width: 1px;
@@ -3805,11 +3826,24 @@ section{
         .next{
             display: flex;
   
+            justify-content: center;
             align-items: center;
+            width: 6vw;
+            height: 6vw;
+            border-radius: 50%;
+            background-color: $gold_color;
+            margin-right: 0;
+            position: relative;
             cursor: pointer;
+            p{
+                display: none;
+            }
             span{
-                margin-left: 1vw;
                 transition: 0.5s;
+             
+                margin-right:0;
+                font-size: 3vw;
+                color: #fff;
             }
             &:hover{
                 span{
@@ -3879,7 +3913,7 @@ section{
     margin: 0;
     position: relative;
     z-index: 10;
-    background-color: rgb(217,208,186);
+   
     img{
         width: 100%;
         height: 100%;
@@ -5508,32 +5542,32 @@ section{
             margin:auto;
             z-index: 10;
             color: $ch_text_l_color;
-           
+            padding: 0 1.5vw;
             .prev{
                 display: flex;
-                width: fit-content;
+                justify-content: center;
                 align-items: center;
-           
-                margin-right: 2.5vw;
+                width: 8vw;
+                height: 8vw;
+                background-color: $gold_color;
+                margin-right:0;
+                border-radius: 50%;
                 position: relative;
                 cursor: pointer;
-                
+                p{
+                    display: none;
+                }
                 span{
                     transition: 0.5s;
                     transform: rotateY(180deg);
-                    margin-right: 1vw;
+                    margin-right: 0;
+                    font-size: 5vw;
+               
+                    color: #fff;
+                    font-weight: 500;
                 }
                 &::after{
-                    display: block;
-                    content: "";
-                    position: absolute;
-                    width: 1px;
-                    height: 2vw;
-                    background-color: $ch_text_l_color;
-                    bottom: 0vw;
-                    top: 0;
-                    right: -1.25vw;
-                    margin:auto 0;
+                    display: none !important;
                 }
                 &:hover{
                     span{
@@ -5544,12 +5578,24 @@ section{
             }
             .next{
                 display: flex;
-      
+                justify-content: center;
                 align-items: center;
+                width: 8vw;
+                height: 8vw;
+                background-color: $gold_color;
+                margin-right:0;
+                border-radius: 50%;
                 cursor: pointer;
+                p{
+                    display: none;
+                }
                 span{
-                    margin-left: 1vw;
+                    margin-left:0;
                     transition: 0.5s;
+                    font-size: 5vw;
+               
+                    color: #fff;
+                    font-weight: 500;
                 }
                 &:hover{
                     span{
@@ -5761,7 +5807,7 @@ section{
                     position: static;
                     margin: 0;
                     height: fit-content;
-                    margin-bottom: 10vw;
+                    margin-bottom: 0vw;
                     p{
                         font-size: $ch_text_l;
                         color: $ch_text_l_color;
@@ -5838,6 +5884,7 @@ section{
                 }
                 > img{
                     order: -1;
+                    margin-top: 20vw;
                     width: 95%;
                 }
             }
@@ -5851,38 +5898,35 @@ section{
         position: absolute;
         width: 100%;
         height: fit-content;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        margin:auto;
+        bottom: -35vw;
         z-index: 10;
         color: $ch_text_l_color;
-       
+        padding: 0 1.5vw;
         .prev{
             display: flex;
-            width: fit-content;
+            justify-content: center;
             align-items: center;
-       
-            margin-right: 2.5vw;
+            width: 8vw;
+            height: 8vw;
+            background-color: $gold_color;
+            margin-right:0;
+            border-radius: 50%;
             position: relative;
             cursor: pointer;
-            
+            p{
+                display: none;
+            }
             span{
                 transition: 0.5s;
                 transform: rotateY(180deg);
-                margin-right: 1vw;
+                margin-right: 0;
+                font-size: 5vw;
+           
+                color: #fff;
+                font-weight: 500;
             }
             &::after{
-                display: block;
-                content: "";
-                position: absolute;
-                width: 1px;
-                height: 2vw;
-                background-color: $ch_text_l_color;
-                bottom: 0vw;
-                top: 0;
-                right: -1.25vw;
-                margin:auto 0;
+                display: none !important;
             }
             &:hover{
                 span{
@@ -5893,12 +5937,24 @@ section{
         }
         .next{
             display: flex;
-  
+            justify-content: center;
             align-items: center;
+            width: 8vw;
+            height: 8vw;
+            background-color: $gold_color;
+            margin-right:0;
+            border-radius: 50%;
             cursor: pointer;
+            p{
+                display: none;
+            }
             span{
-                margin-left: 1vw;
+                margin-left:0;
                 transition: 0.5s;
+                font-size: 5vw;
+           
+                color: #fff;
+                font-weight: 500;
             }
             &:hover{
                 span{

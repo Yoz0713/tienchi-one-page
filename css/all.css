@@ -32,7 +32,7 @@ span {
   overflow: hidden;
   position: absolute;
   z-index: -1;
-  top: 140vw;
+  top: 151vw;
 }
 .swiper-bg img {
   width: 100%;
@@ -1736,6 +1736,7 @@ section {
   margin: 0;
   position: relative;
   z-index: 10;
+  background-color: rgb(217, 208, 186);
 }
 .elenth-page img {
   width: 100%;
@@ -3308,45 +3309,57 @@ section {
     margin: auto;
     z-index: 10;
     color: rgb(85, 84, 84);
+    padding: 0 1.5vw;
   }
   .eighth-page .swiper .navBox .prev {
     display: flex;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    justify-content: center;
     align-items: center;
-    margin-right: 2.5vw;
+    width: 6vw;
+    height: 6vw;
+    background-color: #C9A063;
+    margin-right: 0;
+    border-radius: 50%;
     position: relative;
     cursor: pointer;
+  }
+  .eighth-page .swiper .navBox .prev p {
+    display: none;
   }
   .eighth-page .swiper .navBox .prev span {
     transition: 0.5s;
     transform: rotateY(180deg);
-    margin-right: 1vw;
+    margin-right: 0;
+    font-size: 3vw;
+    color: #fff;
+    font-weight: 500;
   }
   .eighth-page .swiper .navBox .prev::after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 2vw;
-    background-color: rgb(85, 84, 84);
-    bottom: 0vw;
-    top: 0;
-    right: -1.25vw;
-    margin: auto 0;
+    display: none !important;
   }
   .eighth-page .swiper .navBox .prev:hover span {
     transform: rotateY(180deg) translateX(6.5px);
   }
   .eighth-page .swiper .navBox .next {
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 6vw;
+    height: 6vw;
+    background-color: #C9A063;
+    margin-right: 0;
+    border-radius: 50%;
     cursor: pointer;
   }
+  .eighth-page .swiper .navBox .next p {
+    display: none;
+  }
   .eighth-page .swiper .navBox .next span {
-    margin-left: 1vw;
+    margin-left: 0;
     transition: 0.5s;
+    font-size: 3vw;
+    color: #fff;
+    font-weight: 500;
   }
   .eighth-page .swiper .navBox .next:hover span {
     transform: translateX(6.5px);
@@ -3645,24 +3658,35 @@ section {
     margin: auto;
     z-index: 10;
     color: rgb(85, 84, 84);
+    padding: 1.5vw;
   }
   .ninth-page .navBox .prev {
     display: flex;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    justify-content: center;
     align-items: center;
-    margin-right: 2.5vw;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    background-color: #C9A063;
+    margin-right: 0;
     position: relative;
     cursor: pointer;
+  }
+  .ninth-page .navBox .prev p {
+    display: none;
   }
   .ninth-page .navBox .prev span {
     transition: 0.5s;
     transform: rotateY(180deg);
-    margin-right: 1vw;
+    margin-right: 0;
+    font-size: 3vw;
+    color: #fff;
   }
   .ninth-page .navBox .prev::after {
-    display: block;
+    display: none !important;
     content: "";
     position: absolute;
     width: 1px;
@@ -3678,12 +3702,24 @@ section {
   }
   .ninth-page .navBox .next {
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    background-color: #C9A063;
+    margin-right: 0;
+    position: relative;
     cursor: pointer;
   }
+  .ninth-page .navBox .next p {
+    display: none;
+  }
   .ninth-page .navBox .next span {
-    margin-left: 1vw;
     transition: 0.5s;
+    margin-right: 0;
+    font-size: 3vw;
+    color: #fff;
   }
   .ninth-page .navBox .next:hover span {
     transform: translateX(6.5px);
@@ -3755,7 +3791,6 @@ section {
     margin: 0;
     position: relative;
     z-index: 10;
-    background-color: rgb(217, 208, 186);
   }
   .elenth-page img {
     width: 100%;
@@ -5330,45 +5365,57 @@ section {
     margin: auto;
     z-index: 10;
     color: rgb(85, 84, 84);
+    padding: 0 1.5vw;
   }
   .eighth-page .swiper .navBox .prev {
     display: flex;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    justify-content: center;
     align-items: center;
-    margin-right: 2.5vw;
+    width: 8vw;
+    height: 8vw;
+    background-color: #C9A063;
+    margin-right: 0;
+    border-radius: 50%;
     position: relative;
     cursor: pointer;
+  }
+  .eighth-page .swiper .navBox .prev p {
+    display: none;
   }
   .eighth-page .swiper .navBox .prev span {
     transition: 0.5s;
     transform: rotateY(180deg);
-    margin-right: 1vw;
+    margin-right: 0;
+    font-size: 5vw;
+    color: #fff;
+    font-weight: 500;
   }
   .eighth-page .swiper .navBox .prev::after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 2vw;
-    background-color: rgb(85, 84, 84);
-    bottom: 0vw;
-    top: 0;
-    right: -1.25vw;
-    margin: auto 0;
+    display: none !important;
   }
   .eighth-page .swiper .navBox .prev:hover span {
     transform: rotateY(180deg) translateX(6.5px);
   }
   .eighth-page .swiper .navBox .next {
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 8vw;
+    height: 8vw;
+    background-color: #C9A063;
+    margin-right: 0;
+    border-radius: 50%;
     cursor: pointer;
   }
+  .eighth-page .swiper .navBox .next p {
+    display: none;
+  }
   .eighth-page .swiper .navBox .next span {
-    margin-left: 1vw;
+    margin-left: 0;
     transition: 0.5s;
+    font-size: 5vw;
+    color: #fff;
+    font-weight: 500;
   }
   .eighth-page .swiper .navBox .next:hover span {
     transform: translateX(6.5px);
@@ -5572,7 +5619,7 @@ section {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    margin-bottom: 10vw;
+    margin-bottom: 0vw;
   }
   .ninth-page .swiper .swiper-wrapper .slide2 .paraBox p {
     font-size: 6vw;
@@ -5648,6 +5695,7 @@ section {
   }
   .ninth-page .swiper .swiper-wrapper .slide2 > img {
     order: -1;
+    margin-top: 20vw;
     width: 95%;
   }
   .ninth-page .navBox {
@@ -5661,51 +5709,60 @@ section {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    bottom: -35vw;
     z-index: 10;
     color: rgb(85, 84, 84);
+    padding: 0 1.5vw;
   }
   .ninth-page .navBox .prev {
     display: flex;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    justify-content: center;
     align-items: center;
-    margin-right: 2.5vw;
+    width: 8vw;
+    height: 8vw;
+    background-color: #C9A063;
+    margin-right: 0;
+    border-radius: 50%;
     position: relative;
     cursor: pointer;
+  }
+  .ninth-page .navBox .prev p {
+    display: none;
   }
   .ninth-page .navBox .prev span {
     transition: 0.5s;
     transform: rotateY(180deg);
-    margin-right: 1vw;
+    margin-right: 0;
+    font-size: 5vw;
+    color: #fff;
+    font-weight: 500;
   }
   .ninth-page .navBox .prev::after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 2vw;
-    background-color: rgb(85, 84, 84);
-    bottom: 0vw;
-    top: 0;
-    right: -1.25vw;
-    margin: auto 0;
+    display: none !important;
   }
   .ninth-page .navBox .prev:hover span {
     transform: rotateY(180deg) translateX(6.5px);
   }
   .ninth-page .navBox .next {
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 8vw;
+    height: 8vw;
+    background-color: #C9A063;
+    margin-right: 0;
+    border-radius: 50%;
     cursor: pointer;
   }
+  .ninth-page .navBox .next p {
+    display: none;
+  }
   .ninth-page .navBox .next span {
-    margin-left: 1vw;
+    margin-left: 0;
     transition: 0.5s;
+    font-size: 5vw;
+    color: #fff;
+    font-weight: 500;
   }
   .ninth-page .navBox .next:hover span {
     transform: translateX(6.5px);
