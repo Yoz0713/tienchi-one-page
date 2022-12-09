@@ -1587,7 +1587,19 @@
             
             let fall = document.querySelector(".falling-bg")
       
-            let size = [{scale:40,opacitys:4,bright:0.6},{scale:80,opacitys:1.5,bright:0.8},{scale:120,opacitys:0,bright:1},{scale:60,opacitys:2.5,bright:0.7}];
+            let size = [{scale:window.innerWidth > 1024 ? 40:10,
+                opacitys:4,
+                bright:0.6},
+            {scale:window.innerWidth > 1024 ? 80:30,
+                opacitys:1.5,
+                bright:0.8},
+            {scale:window.innerWidth > 1024 ? 120:50,
+                opacitys:0,
+                bright:1},
+            {scale:window.innerWidth > 1024 ? 60:20,
+                opacitys:2.5,
+                bright:0.7}
+        ];
             let leafClass = ['leaf','leaf2']
             let leafs = [`url(./img/2x/leaf1.png)`,`url(./img/2x/leaf2.png)`,`url(./img/2x/leaf5.png)`]
             let opacitys = [0.3,0.5,0.7]
