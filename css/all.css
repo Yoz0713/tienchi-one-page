@@ -727,13 +727,13 @@ section {
   overflow: hidden;
 }
 .sixth-page-opposite .navBox .prev span {
-  order: 3;
+  order: -1;
 }
 .sixth-page-opposite .navBox .next {
-  order: -1;
+  order: 3;
 }
 .sixth-page-opposite .navBox .next span {
-  order: -1;
+  order: 3;
 }
 .sixth-page-opposite .paraBox {
   display: flex;
@@ -4387,6 +4387,7 @@ section {
     height: fit-content;
   }
   .sixth-page .paraBox p {
+    width: auto;
     font-size: 3.7vw;
     margin-bottom: 6vw;
     color: rgb(85, 84, 84);

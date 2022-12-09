@@ -758,13 +758,13 @@ section{
     .navBox{
         .prev{
             span{
-                order:3;
+                order:-1;
             }
         }
         .next{
-            order: -1;
+            order: 3;
             span{
-                order: -1;
+                order: 3;
             }
         }
     }
@@ -4533,6 +4533,7 @@ section{
         margin: 0 auto;
         height: fit-content;
         p{
+            width: auto;
             font-size: $ch_text_m;
             margin-bottom: 6vw;
             color: $ch_text_l_color;
