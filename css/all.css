@@ -432,7 +432,7 @@ section {
   color: rgb(0, 78, 38);
   font-size: 3.7vw;
   margin-bottom: 2vw;
-  font-weight: 900;
+  font-weight: 700;
 }
 .fifth-page .swiper-wrapper .swiper-slide .paraBox h2 span {
   display: inline-block;
@@ -1155,6 +1155,9 @@ section {
 .eighth-page .swiper .swiper-wrapper .slide4 .content-bottom ul li img {
   display: block;
   width: 15vw;
+  height: 10vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .eighth-page .swiper .swiper-wrapper .slide4 .content-bottom ul li p {
   color: rgb(85, 84, 84);
@@ -3067,6 +3070,7 @@ section {
   .eighth-page .swiper .swiper-wrapper .slide4 .content-bottom ul li img {
     display: block;
     width: 33vw;
+    height: 21vw;
   }
   .eighth-page .swiper .swiper-wrapper .slide4 .content-bottom ul li p {
     position: absolute;
@@ -3235,7 +3239,7 @@ section {
   .eighth-page .swiper .swiper-wrapper .slide5 .content-bottom ul li img {
     display: block;
     width: auto;
-    height: 17.7vw;
+    height: 18.55vw;
   }
   .eighth-page .swiper .swiper-wrapper .slide5 .content-bottom ul li p {
     position: absolute;
@@ -5267,7 +5271,7 @@ section {
   .eighth-page .swiper .swiper-wrapper .slide5 .content-bottom ul li img {
     display: block;
     width: auto;
-    height: 17.7vw;
+    height: 18.55vw;
   }
   .eighth-page .swiper .swiper-wrapper .slide5 .content-bottom ul li p {
     position: absolute;

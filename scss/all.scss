@@ -441,7 +441,7 @@ section{
                         color: $green_color;
                         font-size:$ch_text_xl;
                         margin-bottom: 2vw;
-                        font-weight: 900;
+                        font-weight: 700;
                        
                         span{
                             display: inline-block;
@@ -1189,7 +1189,8 @@ section{
                                 img{
                                     display: block;
                                     width: 15vw;
-                                 
+                                    height: 10vw;
+                                    object-fit: cover;
                                 }
                                 p{
                                     color: $ch_text_l_color;
@@ -3162,7 +3163,7 @@ section{
                                 img{
                                     display: block;
                                     width: 33vw;
-                                 
+                                    height: 21vw;
                                 }
                                 p{
                                     position: absolute;
@@ -3336,7 +3337,7 @@ section{
                                 img{
                                     display: block;
                                     width: auto;
-                                    height: 17.7vw;
+                                    height: 18.55vw;
                                   
                                 }
                                 p{
@@ -5431,7 +5432,7 @@ section{
                                 img{
                                     display: block;
                                     width: auto;
-                                    height: 17.7vw;
+                                    height: 18.55vw;
                                   
                                 }
                                 p{
