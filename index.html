@@ -48,6 +48,7 @@
             <div class="second-page-bg">
                 <img src="./img/webp/second-page-bg.webp">
                 <img src="./img/SVG/flowleaf.svg">
+    
             </div>
             <div class="second-page-para">
                 <h2 >每一道光<br>
@@ -1028,14 +1029,21 @@
         function firstPageAnimation(){
             let gg = gsap.timeline()
 
-            gg.fromTo(".first-page h2 span",{
+            gg.fromTo(".first-page",{
+                opacity:0,
+                scale:1.1
+            },{
+                scale:1,
+               opacity:1,
+               duration:4
+            }).fromTo(".first-page h2 span",{
                 opacity:0
             },{
                 opacity:1,
                 duration:1.2,
                 stagger:0.07,
                 onStart:()=>$(".first-page h2").addClass("active")
-            }).fromTo(".first-page-para img",{
+            },"<+2.5").fromTo(".first-page-para img",{
                 opacity:0,
                 x:-15
             },{
@@ -1652,7 +1660,7 @@
             let fall = document.querySelector(".falling-bg")
       
             let size = [{scale:window.innerWidth > 1024 ? 40:20,
-                opacitys:6,
+                opacitys:8,
                 bright:0.6,
                 index:1},
             {scale:window.innerWidth > 1024 ? 80:40,
@@ -1664,7 +1672,7 @@
                 bright:1,
                 index:5},
             {scale:window.innerWidth > 1024 ? 60:30,
-                opacitys:4.5,
+                opacitys:6,
                 bright:0.7,
                 index:2}
         ];
@@ -1682,8 +1690,8 @@
             leaf.style.width = size2
             leaf.style.backgroundImage = leafs[Math.floor(Math.random() * leafs.length)]
             leaf.style.height = size2
-            leaf.style.filter =`blur(${size[random2].opacitys}px)` ;
-            leaf.style.filter =`brightness(${size[random2].bright})` ;
+
+            leaf.style.filter =`brightness(${size[random2].bright}) blur(${size[random2].opacitys}px)` ;
             leaf.style.zIndex =`${size[random2].index}` ;
             fall.appendChild(leaf)
             setTimeout(()=>{
