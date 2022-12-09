@@ -2463,7 +2463,7 @@ section {
     font-family: "Manrope", sans-serif;
   }
   .sixth-page .swiper-wrapper .swiper-slide .imgBox p .data {
-    font-size: 0.3vw;
+    font-size: 2vw;
   }
   .sixth-page .swiper-wrapper .swiper-slide .imgBox p .num {
     font-size: 3.6vw;
@@ -3338,7 +3338,7 @@ section {
     display: none !important;
   }
   .eighth-page .swiper .navBox .prev:hover span {
-    transform: rotateY(180deg) translateX(6.5px);
+    transform: none;
   }
   .eighth-page .swiper .navBox .next {
     display: flex;
@@ -3362,7 +3362,7 @@ section {
     font-weight: 500;
   }
   .eighth-page .swiper .navBox .next:hover span {
-    transform: translateX(6.5px);
+    transform: none;
   }
   .ninth-page {
     display: flex;
@@ -3698,7 +3698,7 @@ section {
     margin: auto 0;
   }
   .ninth-page .navBox .prev:hover span {
-    transform: rotateY(180deg) translateX(6.5px);
+    transform: none;
   }
   .ninth-page .navBox .next {
     display: flex;
@@ -3722,7 +3722,7 @@ section {
     color: #fff;
   }
   .ninth-page .navBox .next:hover span {
-    transform: translateX(6.5px);
+    transform: none;
   }
   .tenth-page {
     display: flex;
@@ -4492,17 +4492,17 @@ section {
     right: 1.5vw;
     bottom: 1.5vw;
     color: #fff;
-    font-size: 2.5vw;
+    font-size: 3vw;
     letter-spacing: 0.2em;
     filter: drop-shadow(1px 1px 1px #000);
     text-align: end;
-    line-height: 1.5em;
+    line-height: 1.8em;
   }
   .sixth-page .swiper-wrapper .swiper-slide .imgBox p span {
     font-family: "Manrope", sans-serif;
   }
   .sixth-page .swiper-wrapper .swiper-slide .imgBox p .data {
-    font-size: 0.3vw;
+    font-size: 2.5vw;
   }
   .sixth-page .swiper-wrapper .swiper-slide .imgBox p .num {
     font-size: 3.6vw;
@@ -5120,7 +5120,7 @@ section {
     position: absolute;
     font-size: 2vw;
     color: #fff;
-    font-weight: 200;
+    font-weight: 300;
     bottom: 1.5vw;
     top: auto;
     left: 2.5vw;
@@ -5281,7 +5281,7 @@ section {
     position: absolute;
     font-size: 2vw;
     color: #fff;
-    font-weight: 200;
+    font-weight: 300;
     bottom: 1.5vw;
     top: auto;
     left: auto;
@@ -5394,7 +5394,7 @@ section {
     display: none !important;
   }
   .eighth-page .swiper .navBox .prev:hover span {
-    transform: rotateY(180deg) translateX(6.5px);
+    transform: none;
   }
   .eighth-page .swiper .navBox .next {
     display: flex;
@@ -5418,7 +5418,7 @@ section {
     font-weight: 500;
   }
   .eighth-page .swiper .navBox .next:hover span {
-    transform: translateX(6.5px);
+    transform: none;
   }
   .ninth-page {
     display: flex;
@@ -5741,7 +5741,7 @@ section {
     display: none !important;
   }
   .ninth-page .navBox .prev:hover span {
-    transform: rotateY(180deg) translateX(6.5px);
+    transform: none;
   }
   .ninth-page .navBox .next {
     display: flex;
@@ -5765,7 +5765,7 @@ section {
     font-weight: 500;
   }
   .ninth-page .navBox .next:hover span {
-    transform: translateX(6.5px);
+    transform: none;
   }
   .tenth-page {
     display: flex;
@@ -5844,16 +5844,16 @@ section {
     transform: translate(0, 0vh);
   }
   25% {
-    transform: translate(-20px, 33vh) rotate(57deg);
+    transform: translate(-20px, 40vh) rotate(57deg);
   }
   50% {
-    transform: translate(-180px, 66vh) rotate(114deg);
+    transform: translate(-180px, 80vh) rotate(114deg);
   }
   75% {
-    transform: translate(-100px, 99vh) rotate(175deg);
+    transform: translate(-100px, 120vh) rotate(175deg);
   }
   100% {
-    transform: translate(-200px, 130vh) rotate(230deg);
+    transform: translate(-200px, 160vh) rotate(230deg);
   }
 }
 @keyframes fall {
@@ -5861,16 +5861,16 @@ section {
     transform: translate(0, 0vh);
   }
   25% {
-    transform: translate(-20px, 33vh) rotate(57deg);
+    transform: translate(-20px, 40vh) rotate(57deg);
   }
   50% {
-    transform: translate(-180px, 66vh) rotate(114deg);
+    transform: translate(-180px, 80vh) rotate(114deg);
   }
   75% {
-    transform: translate(-100px, 99vh) rotate(175deg);
+    transform: translate(-100px, 120vh) rotate(175deg);
   }
   100% {
-    transform: translate(-200px, 130vh) rotate(230deg);
+    transform: translate(-200px, 160vh) rotate(230deg);
   }
 }
 @-webkit-keyframes fall2 {

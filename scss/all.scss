@@ -2539,7 +2539,7 @@ section{
                         font-family: 'Manrope', sans-serif;
                        }
                         .data{
-                            font-size: 0.3vw;
+                            font-size:2vw;
                         }
                         .num{
                             font-size: 3.6vw;
@@ -3450,7 +3450,7 @@ section{
                 &:hover{
                     span{
                         
-                        transform:rotateY(180deg) translateX(6.5px);
+                        transform:none;
                     }
                 }
             }
@@ -3477,7 +3477,7 @@ section{
                 }
                 &:hover{
                     span{
-                        transform:  translateX(6.5px);
+                        transform:  none;
                     }
                 }
             }
@@ -3819,7 +3819,7 @@ section{
             &:hover{
                 span{
                     
-                    transform:rotateY(180deg) translateX(6.5px);
+                    transform:none;
                 }
             }
         }
@@ -3847,7 +3847,7 @@ section{
             }
             &:hover{
                 span{
-                    transform:  translateX(6.5px);
+                    transform: none;
                 }
             }
         }
@@ -4637,16 +4637,16 @@ section{
                         right: 1.5vw;
                         bottom: 1.5vw;
                         color: #fff;
-                        font-size: 2.5vw;
+                        font-size: 3vw;
                         letter-spacing: 0.2em;
                         filter: drop-shadow(1px 1px 1px #000);
                         text-align: end;
-                       line-height: 1.5em;
+                       line-height: 1.8em;
                        span{
                         font-family: 'Manrope', sans-serif;
                        }
                         .data{
-                            font-size: 0.3vw;
+                            font-size: 2.5vw;
                         }
                         .num{
                             font-size: 3.6vw;
@@ -5284,7 +5284,7 @@ section{
                             position: absolute;
                             font-size: 2vw;
                             color: #fff;
-                            font-weight: 200;
+                            font-weight: 300;
                          
                             bottom: 1.5vw;
                             top: auto;
@@ -5451,7 +5451,7 @@ section{
                             position: absolute;
                             font-size: 2vw;
                             color: #fff;
-                            font-weight: 200;
+                            font-weight: 300;
                          
                             bottom: 1.5vw;
                             top: auto;
@@ -5572,7 +5572,7 @@ section{
                 &:hover{
                     span{
                         
-                        transform:rotateY(180deg) translateX(6.5px);
+                        transform:none;
                     }
                 }
             }
@@ -5599,7 +5599,7 @@ section{
                 }
                 &:hover{
                     span{
-                        transform:  translateX(6.5px);
+                        transform:none;
                     }
                 }
             }
@@ -5931,7 +5931,7 @@ section{
             &:hover{
                 span{
                     
-                    transform:rotateY(180deg) translateX(6.5px);
+                    transform:none;
                 }
             }
         }
@@ -5958,7 +5958,7 @@ section{
             }
             &:hover{
                 span{
-                    transform:  translateX(6.5px);
+                    transform:none;
                 }
             }
         }
@@ -6039,16 +6039,16 @@ section{
         transform: translate(0,0vh);
     }
     25%{
-        transform: translate(-20px,33vh) rotate(57deg);
+        transform: translate(-20px,40vh) rotate(57deg);
     }
     50%{
-        transform: translate(-180px,66vh) rotate(114deg);
+        transform: translate(-180px,80vh) rotate(114deg);
     }
     75%{
-        transform: translate(-100px,99vh) rotate(175deg);
+        transform: translate(-100px,120vh) rotate(175deg);
     }
     100%{
-        transform: translate(-200px,130vh) rotate(230deg);
+        transform: translate(-200px,160vh) rotate(230deg);
     }
 }
 @keyframes fall2{
