@@ -908,10 +908,10 @@
                 let ratio;
                 let dragWidth = $(".dragBar").width()/2
                 let ratio2;
-               
+                console.log("start")
                 document.ontouchmove= (j)=>{
                     j.preventDefault()
-                 
+                    console.log("move")
                   let mouseX = j.clientX-(window.innerWidth-parentWidth);
                     
                   ratio = mouseX / parentWidth*100;
@@ -935,7 +935,7 @@
                   
                 }
                document.ontouchend=(e)=>{
-               
+                console.log("end")
                     document.ontouchmove = null
                 }
               
