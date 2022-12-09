@@ -398,6 +398,7 @@ section {
   width: 55vw;
   height: 35vw;
   position: relative;
+  overflow: hidden;
 }
 .fifth-page .swiper-wrapper .swiper-slide .imgBox img {
   width: 100%;
@@ -414,6 +415,17 @@ section {
   font-size: 0.7vw;
   letter-spacing: 0.2em;
   filter: drop-shadow(1px 1px 1px #000);
+}
+.fifth-page .swiper-wrapper .swiper-slide .imgBox video {
+  width: 113%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  mix-blend-mode: screen;
+  opacity: 0.7;
 }
 .fifth-page .swiper-wrapper .swiper-slide .paraBox {
   display: flex;
@@ -1736,8 +1748,11 @@ section {
 
 .form-page {
   width: 100%;
-  margin-top: 5vw;
+  padding-top: 5vw;
+  background-color: #fff;
   margin-bottom: 15vw;
+  position: relative;
+  z-index: 10;
 }
 .form-page-title {
   display: flex;
@@ -1749,9 +1764,10 @@ section {
 }
 .form-page-title h2 {
   font-size: 3vw;
-  font-weight: 500;
+  font-weight: 700;
   color: rgb(0, 78, 38);
   margin-bottom: 1vw;
+  letter-spacing: 0.1em;
 }
 .form-page form {
   display: flex;
@@ -1799,11 +1815,11 @@ section {
   border: none;
   color: #fff;
   font-size: 1vw;
-  transition: 0.5s;
+  transition: margin 0.5s;
   cursor: pointer;
 }
 .form-page form > input:hover {
-  transform: translateY(10px);
+  margin-bottom: -10px;
 }
 
 .computer {
@@ -2239,6 +2255,18 @@ section {
     font-size: 0.7vw;
     letter-spacing: 0.2em;
     filter: drop-shadow(1px 1px 1px #000);
+  }
+  .fifth-page .swiper-wrapper .swiper-slide .imgBox video {
+    width: 105%;
+    height: 100%;
+    border-radius: 60px;
+    position: relative;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    mix-blend-mode: screen;
+    opacity: 0.7;
   }
   .fifth-page .swiper-wrapper .swiper-slide .paraBox {
     display: flex;
@@ -3839,7 +3867,7 @@ section {
   }
   .form-page {
     width: 100%;
-    margin-top: 15vw;
+    padding-top: 15vw;
     margin-bottom: 25vw;
   }
   .form-page-title {
@@ -3853,7 +3881,6 @@ section {
   }
   .form-page-title h2 {
     font-size: 3vw;
-    font-weight: 500;
     color: rgb(0, 78, 38);
     margin-bottom: 1vw;
   }
@@ -3903,11 +3930,7 @@ section {
     border: none;
     color: #fff;
     font-size: 2.2vw;
-    transition: 0.5s;
     cursor: pointer;
-  }
-  .form-page form > input:hover {
-    transform: translateY(10px);
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 500px) {
@@ -5928,7 +5951,7 @@ section {
   }
   .form-page {
     width: 100%;
-    margin-top: 25vw;
+    padding-top: 25vw;
     margin-bottom: 35vw;
   }
   .form-page-title {
@@ -5942,7 +5965,6 @@ section {
   }
   .form-page-title h2 {
     font-size: 6vw;
-    font-weight: 500;
     color: rgb(0, 78, 38);
     margin-bottom: 5vw;
   }
@@ -5985,18 +6007,14 @@ section {
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 25vw;
-    padding: 1.5vw 0;
+    width: 40vw;
+    padding: 3vw 0;
     border-radius: 40px;
     background-color: rgb(0, 78, 38);
     border: none;
     color: #fff;
-    font-size: 2.2vw;
-    transition: 0.5s;
+    font-size: 3.5vw;
     cursor: pointer;
-  }
-  .form-page form > input:hover {
-    transform: translateY(10px);
   }
 }
 @-webkit-keyframes fall {

@@ -153,6 +153,7 @@
         <section class="fifth-page">
             <div class="swiper swiper1 swiper-no-swiping">
                 <div class="swiper-wrapper">
+                    
                     <div class="swiper-slide">
                         <div class="paraBox">
                             <h2>舞動出極鮮芬多精</h2>
@@ -160,6 +161,7 @@
                         </div>
                         <div class="imgBox">
                             <img src="./img/webp/swiper-2-1.webp">
+                            <video src="./video/glowing-bg.mp4" autoplay muted loop></video>
                         </div>
                     
                     </div>
@@ -1599,7 +1601,40 @@
         }
         elenthPageAnimation()
 
+        function formPageAnimation(){
+            let gg = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".form-page",
+                    start:"top 80%"
+                }
+            })
 
+            gg.fromTo(".form-page-title",{
+                opacity:0,
+                y:30
+            },{
+                y:0,
+                opacity:1,
+                duration:1,
+               
+            }).fromTo(".form-page .formBox",{
+                opacity:0,
+                y:30
+            },{
+                y:0,
+                opacity:1,
+                duration:1,
+                stagger:0.3
+            },"<+0.5").fromTo(".form-page form > input",{
+                opacity:0,
+                y:30
+            },{
+                y:0,
+                opacity:1,
+                duration:1,
+            },">-0.5")
+        }
+        formPageAnimation()
 
 
 
