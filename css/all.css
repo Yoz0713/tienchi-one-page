@@ -5118,7 +5118,7 @@ section {
   }
   .eighth-page .swiper .swiper-wrapper .slide4 .content-top p {
     position: absolute;
-    font-size: 2vw;
+    font-size: 3vw;
     color: #fff;
     font-weight: 300;
     bottom: 1.5vw;
@@ -5323,7 +5323,7 @@ section {
     left: 1vw;
     bottom: 1vw;
     color: #fff;
-    font-size: 2vw;
+    font-size: 3vw;
     margin-right: 0.7vw;
     text-align: start;
     letter-spacing: 0.15em;
@@ -5539,7 +5539,7 @@ section {
     position: absolute;
     right: 1.5vw;
     bottom: 1.5vw;
-    font-size: 2vw;
+    font-size: 3vw;
     color: #fff;
     filter: 0 0 1px #000;
     letter-spacing: 0.1em;
